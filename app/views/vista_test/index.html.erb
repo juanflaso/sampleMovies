@@ -1,0 +1,23 @@
+
+<%= form_with scope: :top, url: tops_path, local: true do |form| %> 
+
+  <p>
+    <%= form.label :Persona %><br> 
+    <%= form.text_field :person %> 
+  </p> 
+
+  <p> 
+    <%= form.label :Pelicula %><br> 
+    <%= form.text_area :movie %> 
+  </p> 
+
+  <div class = "field">
+    <%= form.label :Usuario %><br>
+    <%= form.select(:class_name, Top::CLASS_LIST) %>
+  </div>
+
+  <p> 
+    <%= form.submit %> 
+  </p> 
+
+<% end %> 

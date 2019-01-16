@@ -1,0 +1,47 @@
+<%= form_with scope: :person, url: people_path, local: true do |form| %> 
+
+  <p>
+    <%= form.label :Nombres %><br> 
+    <%= form.text_field :nombres %> 
+  </p> 
+
+  <p> 
+    <%= form.label :Apellidos %><br> 
+    <%= form.text_field :apellidos %> 
+  </p> 
+
+  <p> 
+    <%= form.label :Fecha_nac %><br> 
+    <%= form.text_field :fecha_nac %> 
+  </p> 
+
+  <p> 
+    <%= form.label :Plan %><br> 
+    <%= form.text_field :plan %> 
+  </p> 
+
+  <p> 
+    <%= form.label :Ciudad %><br> 
+    <%= form.text_field :ciudad %> 
+  </p> 
+
+  <p> 
+    <%= form.label :pais %><br> 
+    <%= form.text_field :pais %> 
+  </p> 
+
+  <p> 
+    <%= form.label :usuario %><br> 
+    <%= form.text_field :usuario %> 
+  </p> 
+
+  <p> 
+    <%= form.label :password %><br> 
+    <%= form.text_field :password %> 
+  </p> 
+
+  <p> 
+    <%= form.submit %> 
+  </p> 
+
+<% end %> 

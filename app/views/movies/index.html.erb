@@ -1,0 +1,33 @@
+
+<%= form_with scope: :movie, url: movies_path, local: true do |form| %> 
+
+  <p>
+    <%= form.label :Titulo %><br> 
+    <%= form.text_field :titulo %> 
+  </p> 
+
+  <p> 
+    <%= form.label :Director %><br> 
+    <%= form.text_field :director %> 
+  </p> 
+
+  <p> 
+    <%= form.label :Reparto %><br> 
+    <%= form.text_area :director %> 
+  </p> 
+
+  <p> 
+    <%= form.label :Plan %><br> 
+    <%= form.text_field :plan %> 
+  </p> 
+
+  <p> 
+    <%= form.label :Calificacion %><br> 
+    <%= form.text_field :calificacion %> 
+  </p> 
+
+  <p> 
+    <%= form.submit %> 
+  </p> 
+
+<% end %> 
